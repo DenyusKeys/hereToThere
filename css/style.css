@@ -1,0 +1,231 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300);
+html,
+body {
+    background-color: #F3F3F3;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    display: flex;
+    width:auto;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.inputContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+    gap: 0.3rem;
+    width: 100%;
+}
+
+.hereInput, .thereInput {
+    width: 300px;
+}
+.hereCard {
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 8%;
+    padding: 5px 30px;
+    width: 290px;
+    height: 470px;
+    border-radius: 3px;
+    background-color: #fff;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, .2);
+    -webkit-animation: open 2s cubic-bezier(.39, 0, .38, 1);
+}
+
+.recommendationContainer{
+    align-self: center;
+}
+
+.linksContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.thereCard {
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 8%;
+    padding: 5px 30px;
+    width: 290px;
+    height: 470px;
+    border-radius: 3px;
+    background-color: #fff;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, .2);
+    -webkit-animation: open 2s cubic-bezier(.39, 0, .38, 1);
+}
+
+@-webkit-keyframes open {
+    from {
+        padding: 0 30px;
+        height: 0;
+    }
+    to {
+        height: 470px;
+    }
+}
+
+h1,
+h2,
+h3,
+h4 {
+    position: relative;
+}
+
+h1 {
+    color: #666;
+    font-weight: 300;
+    font-size: 6.59375em;
+    line-height: 0;
+    text-align: center;
+    -webkit-animation: up 2s cubic-bezier(.39, 0, .38, 1) .2s;
+}
+
+h2 {
+    margin-top: 1rem;
+    font-weight: 300;
+    font-size: 2.25em;
+    -webkit-animation: up 2s cubic-bezier(.39, 0, .38, 1);
+}
+
+h3 {
+    color: #777;
+    font-weight: 400;
+    font-size: 1em;
+    -webkit-animation: up 2s cubic-bezier(.39, 0, .38, 1) .1s;
+}
+
+span {
+    margin-left: 5px;
+    color: #999;
+    font-weight: 300;
+}
+
+span span {
+    margin-left: 0;
+}
+
+
+table {
+    position: relative;
+    top: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+tr:nth-child(1) td:nth-child(1),
+tr:nth-child(1) td:nth-child(2),
+tr:nth-child(1) td:nth-child(3),
+tr:nth-child(1) td:nth-child(4),
+tr:nth-child(1) td:nth-child(5) {
+    padding-bottom: 22px;
+    -webkit-animation: up 2s cubic-bezier(.39, 0, .38, 1) .7s;
+}
+
+tr:nth-child(2) td:nth-child(1),
+tr:nth-child(2) td:nth-child(2),
+tr:nth-child(2) td:nth-child(3),
+tr:nth-child(2) td:nth-child(4),
+tr:nth-child(2) td:nth-child(5) {
+    padding-bottom: 7px;
+    -webkit-animation: up 2s cubic-bezier(.39, 0, .38, 1) .9s;
+}
+
+tr:nth-child(3) td:nth-child(1),
+tr:nth-child(3) td:nth-child(2),
+tr:nth-child(3) td:nth-child(3),
+tr:nth-child(3) td:nth-child(4),
+tr:nth-child(3) td:nth-child(5) {
+    padding-bottom: 7px;
+    -webkit-animation: up 2s cubic-bezier(.39, 0, .38, 1) .9s;
+}
+
+tr:nth-child(2),
+tr:nth-child(3) {
+    font-size: .9em;
+}
+
+tr:nth-child(3) {
+    color: #999;
+}
+
+@-webkit-keyframes up {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(15px);
+    }
+    50% {
+        opacity: 0;
+        -webkit-transform: translateY(15px);
+    }
+    99% {
+        -webkit-animation-play-state: paused;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+
+ /*On tablet, please make the sections in main stack*/
+
+ @media all and (max-width: 1000px){
+     .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+     }
+
+     .inputContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 0;
+        margin: 0 auto;
+        margin-top: 3%;
+     }
+
+     .hereInput, .thereInput {
+        width: 200px;
+
+    }
+
+    .hereCard, .thereCard{
+    width: 290px;
+    height: 430px;
+    }
+
+    .iconAndTempContainer{
+        display: flex;
+    }
+
+    img{
+        width: auto;
+        height: 100%;
+    }
+ }

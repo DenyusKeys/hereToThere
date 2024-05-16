@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Title in the tab</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+
+		<!-- Google Places Autocomplete Setup Template -->
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHMVmR4-yevblWZDxUqQYgu-aL8GPv7kg&libraries=places"></script>
+		<script>
+			function initialize() {
+			  let input = document.getElementById('searchTextField');
+			  let input2 = document.getElementById('searchTextField2');
+			  const options = {
+			  fields: ["address_components", "geometry", "icon", "name"],
+			  strictBounds: false,
+			  types: ["locality"],
+			  };
+			  let autocomplete = new google.maps.places.Autocomplete(input, options);
+			  let autocomplete2 = new google.maps.places.Autocomplete(input2, options);
+				};
+			
+			google.maps.event.addDomListener(window, 'load', initialize);
+		</script>
+	</head>
+
+
+	<body>
+
+		<div class="inputContainer">
+			<input type="text" name="" value="" class="hereInput" id="searchTextField" placeholder="Here">
+			<input type="text" name="" value="" class="thereInput" id="searchTextField2" placeholder="There">
+			<button type="button" name="button">Get Weather</button>
+		</div>
+
+			
+		<div class="container">
+			<div class="hereCard">
+
+				<h2 class="hereLocation">Brussels</h2>
+				<h3 class="hereCondition">Cloudy<span>Wind 10km/h</span></h3>
+				<div class="iconAndTempContainer">
+					<img class='hereIcon' src="" alt="">
+					<h1 class="hereTemp">23°</h1>
+				</div>
+				<table>
+					<tr>
+						<td class="hereDate2">TUE</td>
+						<td class="hereDate3">WED</td>
+						<td class="hereDate4">THU</td>
+						<td class="hereDate5">FRI</td>
+						<td class="hereDate6">SAT</td>
+					</tr>
+					<tr>
+						<td class="hereHighDate2">30°</td>
+						<td class="hereHighDate3">34°</td>
+						<td class="hereHighDate4">36°</td>
+						<td class="hereHighDate5">34°</td>
+						<td class="hereHighDate6">37°</td>
+					</tr>
+					<tr>
+						<td class="hereLowDate2">17°</td>
+						<td class="hereLowDate3">22°</td>
+						<td class="hereLowDate4">19°</td>
+						<td class="hereLowDate5">23°</td>
+						<td class="hereLowDate6">19°</td>
+					</tr>
+				</table>
+			</div>
+
+			<div class="recommendationContainer">
+				<span>Last Minute Clothing?</span>
+				<div class="linksContainer">
+					<a class='menLink' href="#" target = '_blank'>Men</a>
+					<a class='womenLink' href="">Women</a>
+					<a class='childrenLink' href="">Children</a>
+				</div>
+			</div>
+
+			<div class="thereCard">
+
+				<h2 class="thereLocation">Brussels</h2>
+				<h3 class="thereCondition">Cloudy<span>Wind 10km/h</span></h3>
+				<div class="iconAndTempContainer">
+					<img class='thereIcon' src="" alt="">
+					<h1 class="thereTemp">23°</h1>
+				</div>
+				<table>
+					<tr>
+						<td class="thereDate2">TUE</td>
+						<td class="thereDate3">WED</td>
+						<td class="thereDate4">THU</td>
+						<td class="thereDate5">FRI</td>
+						<td class="thereDate6">SAT</td>
+					</tr>
+					<tr>
+						<td class="thereHighDate2">30°</td>
+						<td class="thereHighDate3">34°</td>
+						<td class="thereHighDate4">36°</td>
+						<td class="thereHighDate5">34°</td>
+						<td class="thereHighDate6">37°</td>
+					</tr>
+					<tr>
+						<td class="thereLowDate2">17°</td>
+						<td class="thereLowDate3">22°</td>
+						<td class="thereLowDate4">19°</td>
+						<td class="thereLowDate5">23°</td>
+						<td class="thereLowDate6">19°</td>
+					</tr>
+				</table>
+			</div>
+
+		</div>
+
+		<script type="text/javascript" src="js/main.js"></script>
+
+		
+	</body>
+</html>
