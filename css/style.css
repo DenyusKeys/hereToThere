@@ -192,7 +192,7 @@ tr:nth-child(3) {
 
  /*On tablet, please make the sections in main stack*/
 
- @media all and (max-width: 1000px){
+ @media all and (max-width: 1236px){
      .container {
         display: flex;
         flex-direction: column;
