@@ -4,6 +4,8 @@
   <img src="https://i.ibb.co/Tr5v2sY/Demo-Picture-Resize.jpg" alt="Demo-Picture-Resize" border="0">
 </a>
 
+<a href="https://www.loom.com/share/57badd54f31b4b07a05ddae606419659?sid=091cdd1a-34a0-44bc-b5b0-cdaf0891c261">View Demo</a>
+
 
 ### About
 This application was created to solve an everyday travelling issue of seeing my current weather and the weather of the destination I was travelling too.
