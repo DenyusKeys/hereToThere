@@ -14,9 +14,12 @@ The program makes calls to weatherAPI for the weather and Google Places API for 
 
 
 # Built With
-- JavaScript
-- CSS
-- HTML5
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/9T534Jb/java-Script-Logo.png" alt="java-Script-Logo" border="0"></a>
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/WP9pb69/htmlLogo.png" alt="htmlLogo" border="0"></a>
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/mXqtV2y/cssLogo.png" alt="cssLogo" border="0"></a>
+
+
+
 
 # Getting Started
 ### Installation
