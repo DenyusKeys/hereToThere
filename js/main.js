@@ -15,7 +15,7 @@ function fetchAll(){
 
 //fetch
 function getFetchHere(){
-  const key = '7cf45ec20efd4fa5950220729243004';
+  const key = 'YOUR_API_Key';
   const choice = document.querySelector('.hereInput').value
   const url = `http://api.weatherapi.com/v1/forecast.json?key=${key}&q=${choice}&days=7&aqi=no`
 
@@ -101,7 +101,7 @@ function getFetchHere(){
 
 //fetch
 function getFetchThere(){
-  const key = '7cf45ec20efd4fa5950220729243004';
+  const key = 'YOUR_API_KEY';
   const choice = document.querySelector('.thereInput').value
   const url = `http://api.weatherapi.com/v1/forecast.json?key=${key}&q=${choice}&days=7&aqi=no`
 
