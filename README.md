@@ -42,13 +42,13 @@ The program makes calls to weatherAPI for the weather and Google Places API for 
 
 # Usage
 Users should be able to:
-1. Begin typing a destination in either the "Here" or "There" box.  Google autocomplete will assist with the exact destination.
+1. Begin typing a destination in either the "Here" or "There" box.  Google's Places API's autocomplete will assist with the exact destination.
 2. Upon clicking the "Get Weather" button, the weather cards will be updated with your destination's weather and forecast.
 3. Clickable links for recommended last minute clothing are dependent on the "There" destination and will take you to clothing ideas
    from Amazon.
 
 # What I learned
-Google's autocomplete has always been an amazing feature whether it's for searching or maps and being able to finally incorporate it into a project was huge for me!
+Google's autocomplete has always been an amazing feature whether it's for browsing or maps and locations. Leveraging that api and being able to incorporate it into a project was huge win for me!
 Pulling values from the input and using them alongside Google's autocomplete allowed for any city to be located with a few letters.
 Working through the JSON returned from WeatherAPI allowed me to practice my dot notation for pulling specific metrics from the API.
 Another huge hurdle was how to dynamically get the forecasted dates to display correctly which required manipulating the Date object a few ways to pull and display what I needed
