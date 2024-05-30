@@ -24,8 +24,8 @@ The program makes calls to weatherAPI for the weather and Google Places API for 
 # Getting Started
 ### Installation
 
-1. Get a free API key at [https://www.weatherapi.com/my/](https://www.weatherapi.com/my/)
-2. Get a free API key at [https://developers.google.com/maps/documentation/places/web-service/get-api-key](https://developers.google.com/maps/documentation/places/web-service/get-api-key)
+1. Get a free API key for the weatherAPI at [https://www.weatherapi.com/my/](https://www.weatherapi.com/my/)
+2. Get a free API key for the Google Places API at [https://developers.google.com/maps/documentation/places/web-service/get-api-key](https://developers.google.com/maps/documentation/places/web-service/get-api-key)
 3. Enable 'Places API' under APIs and Services in the google cloud console.
 4. Clone the repo
    ```sh
