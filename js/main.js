@@ -13,7 +13,7 @@ function fetchAll(){
   getFetchThere();
 }
 
-//fetch
+//fetch here
 function getFetchHere(){
   const key = 'YOUR_API_Key';
   const choice = document.querySelector('.hereInput').value
@@ -99,7 +99,7 @@ function getFetchHere(){
       });
 }
 
-//fetch
+//fetch there
 function getFetchThere(){
   const key = 'YOUR_API_KEY';
   const choice = document.querySelector('.thereInput').value
