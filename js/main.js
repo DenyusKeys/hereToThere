@@ -15,7 +15,9 @@ function fetchAll(){
 
 //fetch here
 function getFetchHere(){
-  const key = 'YOUR_API_Key';
+  //Use your own api key for WeatherAPI here
+  //const key = 'YOUR_API_Key';
+  const key = `16ce22e237e84490898195544241406` 
   const choice = document.querySelector('.hereInput').value
   const url = `http://api.weatherapi.com/v1/forecast.json?key=${key}&q=${choice}&days=7&aqi=no`
 
@@ -101,7 +103,9 @@ function getFetchHere(){
 
 //fetch there
 function getFetchThere(){
-  const key = 'YOUR_API_KEY';
+  //Use your own api key for WeatherAPI here
+  //const key = 'YOUR_API_KEY';
+  const key = `16ce22e237e84490898195544241406`
   const choice = document.querySelector('.thereInput').value
   const url = `http://api.weatherapi.com/v1/forecast.json?key=${key}&q=${choice}&days=7&aqi=no`
 
