@@ -60,7 +60,16 @@ function getFetchHere(){
         document.querySelector('.hereTemp').innerHTML = Math.floor(data.current.temp_f) + '°';
         
         //Setting the icon
-        if(data.current.condition.text == 'Partly cloudy'){
+         if(data.current.condition.text == 'Partly cloudy'){
+          document.querySelector('.hereIcon').src = `https://github.com/DenyusKeys/hereToThere/blob/main/js/icons/partlyCloudy.png?raw=true`;
+        } else if(data.current.condition.text == 'Sunny' || data.current.condition.text == 'Clear'){
+          document.querySelector('.hereIcon').src = `https://github.com/DenyusKeys/hereToThere/blob/main/js/icons/sun.png?raw=true`;
+        } else if(data.current.condition.text == 'Overcast'){
+          document.querySelector('.hereIcon').src = `https://github.com/DenyusKeys/hereToThere/blob/main/js/icons/clouds.png?raw=true`;
+        } else if(data.current.condition.text == 'Patchy light rain with thunder' || data.current.condition.text == 'Light rain' || data.current.condition.text == 'Moderate or heavy rain with thunder'){
+          document.querySelector('.hereIcon').src = `https://github.com/DenyusKeys/hereToThere/blob/main/js/icons/rain.png?raw=true`;
+        }
+        /*if(data.current.condition.text == 'Partly cloudy'){
           document.querySelector('.hereIcon').src = `D:/Programming/100Devs/HereToThere/js/icons/partlyCloudy.png`;
         } else if(data.current.condition.text == 'Sunny' || data.current.condition.text == 'Clear'){
           document.querySelector('.hereIcon').src = `D:/Programming/100Devs/HereToThere/js/icons/sun.png`;
@@ -68,7 +77,7 @@ function getFetchHere(){
           document.querySelector('.hereIcon').src = `D:/Programming/100Devs/HereToThere/js/icons/clouds.png`;
         } else if(data.current.condition.text == 'Patchy light rain with thunder' || data.current.condition.text == 'Light rain' || data.current.condition.text == 'Moderate or heavy rain with thunder'){
           document.querySelector('.hereIcon').src = `D:/Programming/100Devs/HereToThere/js/icons/rain.png`;
-        }
+        }*/
 
 
         //Setting Forecast High/Low Temps
@@ -148,6 +157,28 @@ function getFetchThere(){
         
         //Setting the icon
         if(data.current.condition.text == 'Partly cloudy'){
+          document.querySelector('.thereIcon').src = `https://github.com/DenyusKeys/hereToThere/blob/main/js/icons/partlyCloudy.png?raw=true`;
+          document.querySelector('.menLink').href = `https://www.amazon.com/s?k=mens+light+clothing&rh=p_90%3A8308921011&dc&crid=E8LG34WIA1EB&qid=1714863925&rnid=8308919011&sprefix=mens+light+clothin%2Caps%2C143&ref=sr_nr_p_90_2&ds=v1%3A3J9mEzAydW9SlHuLmtsiGT9p7AAJEVEjbhCzXRPdIS8`
+          document.querySelector('.womenLink').href = `https://www.amazon.com/s?k=womens+light+clothing&rh=p_90%3A8308921011&dc&crid=1F9V495CRACQF&qid=1715885631&rnid=8308919011&sprefix=womens+light+clothing%2Caps%2C153&ref=sr_nr_p_90_2&ds=v1%3AObSUB3HiUO%2BPzJuTSD1OW1ky0mFBp%2BeebMXL2IsI6qE`
+          document.querySelector('.childrenLink').href = `https://www.amazon.com/s?k=children+light+clothing&rh=p_90%3A8308921011&dc&crid=YCU4K3I0RGPA&qid=1715885731&rnid=8308919011&sprefix=children+light+clothing%2Caps%2C126&ref=sr_nr_p_90_2&ds=v1%3AVMBkX0u50hLpj9gMKPnZ8YMsFVlPJPNbhO5ankzbBiU`
+        } else if(data.current.condition.text == 'Sunny' || data.current.condition.text == 'Clear'){
+          document.querySelector('.thereIcon').src = `https://github.com/DenyusKeys/hereToThere/blob/main/js/icons/sun.png?raw=true`;
+          document.querySelector('.menLink').href = `https://www.amazon.com/s?k=mens+light+clothing&rh=p_90%3A8308921011&dc&crid=E8LG34WIA1EB&qid=1714863925&rnid=8308919011&sprefix=mens+light+clothin%2Caps%2C143&ref=sr_nr_p_90_2&ds=v1%3A3J9mEzAydW9SlHuLmtsiGT9p7AAJEVEjbhCzXRPdIS8`
+          document.querySelector('.womenLink').href = `https://www.amazon.com/s?k=womens+light+clothing&rh=p_90%3A8308921011&dc&crid=1F9V495CRACQF&qid=1715885631&rnid=8308919011&sprefix=womens+light+clothing%2Caps%2C153&ref=sr_nr_p_90_2&ds=v1%3AObSUB3HiUO%2BPzJuTSD1OW1ky0mFBp%2BeebMXL2IsI6qE`
+          document.querySelector('.childrenLink').href = `https://www.amazon.com/s?k=children+light+clothing&rh=p_90%3A8308921011&dc&crid=YCU4K3I0RGPA&qid=1715885731&rnid=8308919011&sprefix=children+light+clothing%2Caps%2C126&ref=sr_nr_p_90_2&ds=v1%3AVMBkX0u50hLpj9gMKPnZ8YMsFVlPJPNbhO5ankzbBiU`
+        } else if(data.current.condition.text == 'Overcast'){
+          document.querySelector('.thereIcon').src = `https://github.com/DenyusKeys/hereToThere/blob/main/js/icons/clouds.png?raw=true`;
+          document.querySelector('.menLink').href = `https://www.amazon.com/s?k=mens+light+clothing&rh=p_90%3A8308921011&dc&crid=E8LG34WIA1EB&qid=1714863925&rnid=8308919011&sprefix=mens+light+clothin%2Caps%2C143&ref=sr_nr_p_90_2&ds=v1%3A3J9mEzAydW9SlHuLmtsiGT9p7AAJEVEjbhCzXRPdIS8`
+          document.querySelector('.womenLink').href = `https://www.amazon.com/s?k=womens+light+clothing&rh=p_90%3A8308921011&dc&crid=1F9V495CRACQF&qid=1715885631&rnid=8308919011&sprefix=womens+light+clothing%2Caps%2C153&ref=sr_nr_p_90_2&ds=v1%3AObSUB3HiUO%2BPzJuTSD1OW1ky0mFBp%2BeebMXL2IsI6qE`
+          document.querySelector('.childrenLink').href = `https://www.amazon.com/s?k=children+light+clothing&rh=p_90%3A8308921011&dc&crid=YCU4K3I0RGPA&qid=1715885731&rnid=8308919011&sprefix=children+light+clothing%2Caps%2C126&ref=sr_nr_p_90_2&ds=v1%3AVMBkX0u50hLpj9gMKPnZ8YMsFVlPJPNbhO5ankzbBiU`
+        } else if(data.current.condition.text == 'Patchy light rain with thunder' || data.current.condition.text == 'Light rain' || data.current.condition.text == 'Moderate or heavy rain with thunder'){
+          document.querySelector('.thereIcon').src = `https://github.com/DenyusKeys/hereToThere/blob/main/js/icons/rain.png?raw=true`;
+          document.querySelector('.menLink').href = `https://www.amazon.com/s?k=mens+rain+clothing&rh=p_90%3A8308921011&dc&crid=1S4DBHU1IPQCE&qid=1715885850&rnid=8308919011&sprefix=mens+rainclothing%2Caps%2C127&ref=sr_nr_p_90_2&ds=v1%3Ao4TYA1lhRNaWJEzMSTywe%2FTSAj%2F0dyWhTGFp1iYsoCY`
+          document.querySelector('.womenLink').href = `https://www.amazon.com/s?k=womens+rain+clothing&rh=p_90%3A8308921011&dc&crid=15DGRLOJ8P0OS&qid=1715885870&rnid=8308919011&sprefix=womensrain+clothing%2Caps%2C130&ref=sr_nr_p_90_2&ds=v1%3A%2FtvPUDPk5o%2F1K5QDGyv3dpi8EesTvEBBBz182V19qnM`
+          document.querySelector('.childrenLink').href = `https://www.amazon.com/s?k=childrens+rain+clothing&rh=p_90%3A8308921011&dc&crid=2L63IWCQ2LTF2&qid=1715885889&rnid=8308919011&sprefix=childrensrain+clothing%2Caps%2C129&ref=sr_nr_p_90_2&ds=v1%3AXwEdrElYyf5uYBYZmLt44ZpFpy%2FkMF6v0WnuxlRlk4c`
+        }
+          
+        /*if(data.current.condition.text == 'Partly cloudy'){
           document.querySelector('.thereIcon').src = `D:/Programming/100Devs/HereToThere/js/icons/partlyCloudy.png`;
           document.querySelector('.menLink').href = `https://www.amazon.com/s?k=mens+light+clothing&rh=p_90%3A8308921011&dc&crid=E8LG34WIA1EB&qid=1714863925&rnid=8308919011&sprefix=mens+light+clothin%2Caps%2C143&ref=sr_nr_p_90_2&ds=v1%3A3J9mEzAydW9SlHuLmtsiGT9p7AAJEVEjbhCzXRPdIS8`
           document.querySelector('.womenLink').href = `https://www.amazon.com/s?k=womens+light+clothing&rh=p_90%3A8308921011&dc&crid=1F9V495CRACQF&qid=1715885631&rnid=8308919011&sprefix=womens+light+clothing%2Caps%2C153&ref=sr_nr_p_90_2&ds=v1%3AObSUB3HiUO%2BPzJuTSD1OW1ky0mFBp%2BeebMXL2IsI6qE`
@@ -167,7 +198,7 @@ function getFetchThere(){
           document.querySelector('.menLink').href = `https://www.amazon.com/s?k=mens+rain+clothing&rh=p_90%3A8308921011&dc&crid=1S4DBHU1IPQCE&qid=1715885850&rnid=8308919011&sprefix=mens+rainclothing%2Caps%2C127&ref=sr_nr_p_90_2&ds=v1%3Ao4TYA1lhRNaWJEzMSTywe%2FTSAj%2F0dyWhTGFp1iYsoCY`
           document.querySelector('.womenLink').href = `https://www.amazon.com/s?k=womens+rain+clothing&rh=p_90%3A8308921011&dc&crid=15DGRLOJ8P0OS&qid=1715885870&rnid=8308919011&sprefix=womensrain+clothing%2Caps%2C130&ref=sr_nr_p_90_2&ds=v1%3A%2FtvPUDPk5o%2F1K5QDGyv3dpi8EesTvEBBBz182V19qnM`
           document.querySelector('.childrenLink').href = `https://www.amazon.com/s?k=childrens+rain+clothing&rh=p_90%3A8308921011&dc&crid=2L63IWCQ2LTF2&qid=1715885889&rnid=8308919011&sprefix=childrensrain+clothing%2Caps%2C129&ref=sr_nr_p_90_2&ds=v1%3AXwEdrElYyf5uYBYZmLt44ZpFpy%2FkMF6v0WnuxlRlk4c`
-        }
+        }*/
 
 
         //Setting Forecast High/Low Temps
