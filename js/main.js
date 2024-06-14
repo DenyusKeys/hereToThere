@@ -19,7 +19,7 @@ function getFetchHere(){
   //const key = 'YOUR_API_Key';
   const key = `16ce22e237e84490898195544241406` 
   const choice = document.querySelector('.hereInput').value
-  const url = `http://api.weatherapi.com/v1/forecast.json?key=${key}&q=${choice}&days=7&aqi=no`
+  const url = `https://api.weatherapi.com/v1/forecast.json?key=${key}&q=${choice}&days=7&aqi=no`
 
   // Fetching from weatherapi.com
   fetch(url)
@@ -107,7 +107,7 @@ function getFetchThere(){
   //const key = 'YOUR_API_KEY';
   const key = `16ce22e237e84490898195544241406`
   const choice = document.querySelector('.thereInput').value
-  const url = `http://api.weatherapi.com/v1/forecast.json?key=${key}&q=${choice}&days=7&aqi=no`
+  const url = `https://api.weatherapi.com/v1/forecast.json?key=${key}&q=${choice}&days=7&aqi=no`
 
   fetch(url)
       .then(res => res.json()) // parse response as JSON
